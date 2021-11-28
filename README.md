@@ -21,7 +21,7 @@ Minimalistic image gallery for REACT. Responsive with all important features and
 - Support all the usual taps that are in all applications work, such as pinch-to-zoom (scroll wheel on desktop), swipe right/left to slide images, swipe up to close.
 - Simple and neat animations of the appearance, loading of the image.
 
-# How install
+# How to install
 1. First of all you should create react app by command `npx create-react-app appname` ([more details](https://reactjs.org/docs/create-a-new-react-app.html))
 2. Download folder `src/imager` from this repository and set in your folder where you created your app in folder `.../src/imager`
 3. Then connect it by `import { ImagerDisplay, imagerShow, ImagerImg } from './imager/index.js'`
