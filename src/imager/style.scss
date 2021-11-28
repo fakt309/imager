@@ -1,0 +1,73 @@
+@import 'consts.scss';
+
+.imagerDisplay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // margin-left: 0px;
+  // -webkit-overflow-scrolling: touch;
+  // overflow-x: auto;
+  // overflow-y: scroll;
+}
+.imagerBackground {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: $imager-display-background;
+  opacity: 0;
+  transition: all ease $imager-duration;
+  z-index: 1;
+}
+.imagerTransitioner {
+  display: none;
+  position: fixed;
+}
+.imagerList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.imagerWrapImg {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: #fafafa;
+  transition-property: margin, width, height;
+  transition-timing-function: ease;
+  transition-duration: $imager-duration;
+  margin-left: 0px;
+  overflow: hidden;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.imagerWrapImg[side="left"] {
+  margin-left: -200vw;
+}
+.imagerWrapImg[side="right"] {
+  margin-left: 200vw;
+}
+.imagerLoader {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url("./loader.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.imagerImage {
+  width: 100%;
+  height: 100%;
+}
