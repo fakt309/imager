@@ -1,6 +1,5 @@
 # imager
 Minimalistic image gallery for REACT. Responsive with all important features and smooth animations.  
-## [DEMO](https://gaidadei.ru/polygon/imager/)
 
 ## Desktop
 ![1](https://user-images.githubusercontent.com/43887554/143771364-4dc49aa4-bed5-4f2f-881c-3b9850224109.gif)
